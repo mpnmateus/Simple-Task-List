@@ -69,6 +69,11 @@ body {
     width: 100%;
 }
 
+.task-item {
+    display: flex;
+    
+}
+
 /* Utilities */
 .error {
     border: 2px solid red !important;
