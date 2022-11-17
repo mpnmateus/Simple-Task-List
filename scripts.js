@@ -3,7 +3,7 @@ const addTaskButton = document.querySelector(".new-task-button");
 
 const tasksContainer = document.querySelector(".tasks-container");
 
-const validateInput = () => inputElement.value.trim().lenght > 0;
+const validateInput = () => inputElement.value.trim().length > 0;
     /*  
     if (return inputElement.Value.trim().lenght > 0) {
         return true;
@@ -36,7 +36,7 @@ const handleAddTask = () => {
     deleteItem.classList.add("far");
     deleteItem.classList.add("fa-trash-alt");
 
-    deleteItem.addEventListener("click", () => handleDeleteCLick(taskItemContainer, taskContent));
+    deleteItem.addEventListener("click", () => handleDeleteClick(taskItemContainer, taskContent));
 
     taskItemContainer.appendChild(taskContent);
     taskItemContainer.appendChild(deleteItem);
@@ -48,7 +48,7 @@ const handleAddTask = () => {
     updateLocalStorage ()
 };
 
-const handleCLick = (taskContent) => {
+const handleClick = (taskContent) => {
     const tasks = tasksContainer.childNodes;
     
     for (const task of tasks) {
@@ -62,7 +62,7 @@ const handleCLick = (taskContent) => {
     updateLocalStorage ()
 };
 
-const handleDeleteCLick = (taskItemContainer, taskContent) => {
+const handleDeleteClick = (taskItemContainer, taskContent) => {
     const tasks = tasksContainer.childNodes;
 
     for (const task of tasks) {
@@ -77,7 +77,7 @@ const handleDeleteCLick = (taskItemContainer, taskContent) => {
 };
 
 const handleInputChange = () => {
-    const inputIsValid = validateInput ();
+    const inputIsValid = validateInput();
 
     if (inputIsValid) {
         return inputElement.classList.remove("error");
@@ -120,7 +120,7 @@ const refreshTaskUsingLocalStorage = () => {
     deleteItem.classList.add("far");
     deleteItem.classList.add("fa-trash-alt");
 
-    deleteItem.addEventListener("click", () => handleDeleteCLick(taskItemContainer, taskContent));
+    deleteItem.addEventListener("click", () => handleDeleteClick(taskItemContainer, taskContent));
 
     taskItemContainer.appendChild(taskContent);
     taskItemContainer.appendChild(deleteItem);
@@ -129,7 +129,7 @@ const refreshTaskUsingLocalStorage = () => {
     }
 };
 
-refreshTaskUsingLocalStorage = ();
+refreshTaskUsingLocalStorage();
 
 addTaskButton.addEventListener("click", () => handleAddTask());
 
