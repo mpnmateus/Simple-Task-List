@@ -55,7 +55,7 @@ const handleClick = (taskContent) => {
         const currentTaskIsBeingClicked = task.firstChild.isSameNode(taskContent);
         
         if (currentTaskIsBeingClicked) {
-            task.firstChild.classList.toggle("Completed");
+            task.firstChild.classList.toggle("completed");
         }
     }
 
