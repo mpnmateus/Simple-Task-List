@@ -5,9 +5,9 @@ A página web desenvolvida apresenta uma lista de tarefas que oferece a possibil
 ![Imagem readme](https://user-images.githubusercontent.com/118082707/202803078-ff5422fe-4bf0-446f-9e8a-bc07b6706e8d.JPG)
 
 ### Tecnologias utilizadas
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 
 ### Recursos adicionais
